@@ -1,0 +1,121 @@
+/*Tablet*/
+@media only screen and (max-width: 1023px) {
+    html{
+        font-size:14px;
+    }
+    body{
+        width:95%;
+    }
+    .blockIcon .name{
+        display:none;
+    }
+    .blockList ul li{
+        width:90px;
+        height:50px;
+        padding-top:10px;
+    }
+    .blockList ul li#program .link{
+        margin-top:-117px;
+    }
+    .main .blockImg{
+        font-size:25px;
+    }
+    .main .blockImg .blockText{
+        width:45%;
+    }
+    .main .blockImg .text{
+        line-height:normal;
+        width:20%;
+        margin-left:2%;
+    }
+    .main .blockImg .animation{
+        left:27%;
+        top:85%;
+    }
+}
+
+
+
+
+/*Mobile*/
+@media only screen and (max-width: 740px) {
+    html{
+        font-size: 12px;;
+    }
+    body{
+        width:100%;
+    }
+    .blockList{
+        position:relative;
+        background:blue;
+    }
+    .blockList button.menu{
+        
+        border:none;
+        background:transparent;
+        color:aliceblue;
+        font-size:20px;
+        display:block;
+        position:absolute;
+        top:-55px;
+    }
+    .blockList button.menu svg{
+        font-size:3rem;
+    }
+    .blockList button.menu:hover{
+        background:royalblue;
+        border-radius:5px;
+    }
+    .blockList ul {
+        width:50%;
+        background:rgba(7, 2, 78, 0.562);
+        top:-70px;
+        display:none;
+        position:absolute;
+    }
+    .blockList ul li{
+        width:90%;
+        border:none;
+        border-radius:0;
+    }
+    .blockList ul li .link{
+        width:14rem;
+        height:6rem;
+        margin-top:0;
+        flex-direction: column;
+        justify-content:space-evenly;
+        
+    
+        position:absolute;
+        left:100%;
+    }
+    .blockList ul li#program .link{
+        margin-top:0;
+    }
+    .blockList ul li .link a{
+        width:90%;
+        border:none;
+        border-radius:0;
+        background:rgb(65, 105, 225);
+    }
+    .main{
+        margin-top:35px;
+    }
+    .main .blockImg{
+        font-size:28px;
+        position:unset;
+    }
+    .main .blockImg .blockText{
+        margin-top:286px;
+        width:75%;
+        position:unset;
+    }
+    .main .blockImg .text{
+        top:63%;
+        width:35%;
+    }
+    .main .blockImg .animation{
+        left:40%;
+        top:80%;
+    }
+}

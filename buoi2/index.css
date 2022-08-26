@@ -1,6 +1,6 @@
 @font-face{
     font-family: myFont2;
-    src: url('font-family/Dancing/DancingScript-VariableFont_wght.ttf');
+    src: url('font-family/DancingScript-VariableFont_wght.ttf');
 }
 
 *{
@@ -19,25 +19,25 @@ a{
 
 html{
     font-family:Arial, Helvetica, sans-serif;
-    font-size:15px;
+    font-size:16px;
 }
 body{
     width:80%;
     margin:auto;
     background-color:lightgrey;
     background-image: linear-gradient(34deg, rgba(14,8,103,1) 0%, rgba(0,212,255,1) 100%);
-    background-size: 100% 220px;
+    background-size: 100% 13rem;
     background-repeat: no-repeat;
 }
 
 /*icon*/
 .blockIcon{
-    max-width:300px;
+    max-width:18rem;
     margin:auto;
     text-align: center;
 }
 .blockIcon #icon img{
-    height:80px;
+    height:5rem;
 }
 .blockIcon .name{
     font-size:22px;
@@ -48,6 +48,7 @@ body{
 /*list*/
 .blockList button.menu{
     display:none;
+    position:absolute;
 }
 .blockList ul{
     margin-top:10px;
@@ -73,8 +74,8 @@ body{
 }
 
 .blockList ul li .link{
-    width:250px;
-    height:100px;
+    width:14rem;
+    height:6rem;
     margin-top:-100px;
     margin-left:-45px;
     flex-direction: row;
@@ -84,8 +85,8 @@ body{
     display:none;
 }
 .blockList ul li .link a{
-    width:65px;
-    height:65px;
+    width:4rem;
+    height:4rem;
     padding-top:12px;
     border:2px solid white;
     border-radius:63% 37% 82% 18% / 35% 33% 67% 65% ;
@@ -162,7 +163,7 @@ body{
     width:2em;
     height:2em;
     padding:0.3em 0 0 0.3em;
-    font-size:1em;
+    font-size:1.5rem;
     color:white;
     border:2px solid white;
     border-radius:50%;
