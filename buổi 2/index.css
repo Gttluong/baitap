@@ -1,0 +1,179 @@
+@font-face{
+    font-family: myFont2;
+    src: url('font-family/Dancing/DancingScript-VariableFont_wght.ttf');
+}
+
+*{
+    margin:0;
+    left:0;
+    box-sizing:border-box;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+
+
+html{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+}
+body{
+    width:80%;
+    margin:auto;
+    background-color:lightgrey;
+    background-image: linear-gradient(34deg, rgba(14,8,103,1) 0%, rgba(0,212,255,1) 100%);
+    background-size: 100% 220px;
+    background-repeat: no-repeat;
+}
+
+/*icon*/
+.blockIcon{
+    max-width:300px;
+    margin:auto;
+    text-align: center;
+}
+.blockIcon #icon img{
+    height:80px;
+}
+.blockIcon .name{
+    font-size:22px;
+    font-weight:bolder;
+    color:rgb(11, 41, 5);
+}
+
+/*list*/
+.blockList button.menu{
+    display:none;
+}
+.blockList ul{
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.blockList ul li{
+    width:115px;
+    height:30px;
+    padding-top:5px;
+    border: 2px solid white;
+    border-radius:79% 21% 70% 30% / 53% 59% 41% 47% ;
+
+    font-size:15px;
+    font-weight:bold;
+    text-align:center;
+    color:white;
+    
+    position:relative;
+}
+
+.blockList ul li .link{
+    width:250px;
+    height:100px;
+    margin-top:-100px;
+    margin-left:-45px;
+    flex-direction: row;
+    justify-content:space-evenly;
+
+    position:absolute;
+    display:none;
+}
+.blockList ul li .link a{
+    width:65px;
+    height:65px;
+    padding-top:12px;
+    border:2px solid white;
+    border-radius:63% 37% 82% 18% / 35% 33% 67% 65% ;
+    background: rgb(232,62,0);
+    background: linear-gradient(18deg, rgba(232,62,0,1) 0%, rgba(255,184,90,1) 100%);
+}
+
+.blockList ul li:hover{
+    background:rgb(231, 177, 0);
+}
+.blockList ul li:hover .link{
+    display:flex;
+}
+/*main*/
+.main{
+    margin-top:10px;
+    border:10px solid white;
+    border-radius:3px;
+    background:white;
+}
+
+.main .blockImg{
+    width:100%;
+    height:440px;
+    font-size:22px;
+    margin:auto;
+    background-image: url('https://static.tuoitre.vn/tto/i/s626/2016/07/26/thap-nen-5-1469545230.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    overflow: hidden;
+    position:relative;
+}
+.main .blockImg .blockText {
+    width: 32%;
+    height: 35%;
+    margin-left:-50px;
+    transform:skewX(25deg);
+    position:absolute;
+    top:65%;
+
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.main .blockImg .blockText .block1{
+    width:87%;
+    height:100%;
+    background: linear-gradient(54deg, rgb(64, 0, 84) 15%, rgb(162 9 193) 100%);
+}
+.main .blockImg .blockText .block2{
+    width:13%;
+    height:70%;
+    background:royalblue;
+    
+}
+
+.main .blockImg .text{
+    width:13.5%;
+    height:30%;
+    margin-left:4%;
+    
+    font-family:myFont2;
+    font-size:1em;
+    font-weight:bold;
+    text-transform: uppercase;
+    color:rgb(231,177,0);
+    line-height: 130%;
+    display:block;
+    position:absolute;
+    top:67%;
+}
+
+.main .blockImg .animation{
+    width:2em;
+    height:2em;
+    padding:0.3em 0 0 0.3em;
+    font-size:1em;
+    color:white;
+    border:2px solid white;
+    border-radius:50%;
+    animation: rotate 1s linear infinite;
+
+    position:absolute;
+    top:87%;
+    left:18%;
+}
+
+@keyframes rotate{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
