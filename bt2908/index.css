@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background:rgb(228, 228, 228);
+}
+.blockMain{
+    margin:auto;
+    width:98%;
+    height:100vh;
+    background:white;
+}
+
+
+
+/*tille*/
+
+.blockText{
+    margin-bottom:.5rem;
+    width:100%;
+    text-align: center;
+    font-style:italic;
+    font-weight:bolder;
+}
+.blockText p:first-child{
+    padding-top:.5rem;
+    padding-bottom:1rem;
+    font-size:1.5rem;
+    color:#6A0702;
+}
+.blockText p:last-child{
+    font-size:.9rem;
+    color:#685960;
+}
+
+
+
+/*container*/
+
+.container{
+    margin:auto;
+    width:98%;
+    height:80vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items: center;
+    position:relative;
+    isolation: isolate;
+}
+/*background*/
+.container:after{
+    content: '';
+    position:absolute;
+    inset: 0;
+    z-index: -1;
+    background: url('https://halongcruisecenter.com/pic/News/images/canh-dep/canh-bien-dep-nhat-tren-the-gioi-2.jpeg') 
+                no-repeat;
+    background-size:cover;
+    opacity: .7;
+}
+/*blockItems*/
+.container .blockItem{
+    width:22%;
+    height:85%;
+    background:white;
+    margin-top:2%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px white;
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.container .blockItem:first-child{
+    margin-left:.5rem;
+}
+.container .blockItem:last-child{
+    margin-right:.5rem;
+}
+
+
+.container .blockItem .image{
+    flex:1;
+}
+.container .blockItem .image img{
+    width:100%;
+}
+
+
+.container .blockItem .text{
+    width:87%;
+    margin:auto;
+    flex:1;
+    font-size:1rem;
+    line-height: 1.3rem;
+}
+.text .main{
+    padding:.3rem 0;
+    color:#b40b08;
+    font-weight:bold;
+    word-spacing: .5rem;
+}
+.text p:nth-child(2){
+    word-spacing: .4rem;
+    text-align: justify;
+    padding-bottom:.3rem;
+}
+.text .property{
+    color:#fdc100;
+    font-weight:bold;
+}
+.text .name{
+    color:#ce3339;
+    text-transform: capitalize;
+    font-size:.9rem;
+}
+.text > span{
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    overflow:hidden;
+}
