@@ -1,0 +1,58 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.grid{
+    width:100%;
+    height:100vh;
+
+    background:lightskyblue;
+
+    display:grid;
+    gap:10px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows:45% 20% auto;
+}
+.item{
+    background:lightskyblue;
+}
+
+
+.one{
+    background:url('https://toiyeumeo.com/wp-content/uploads/2021/03/hinh-anh-meo-xinh-ngo-nghinh-1000x577.jpg') no-repeat;
+    background-size:cover;
+    grid-area: 1/1/2/3;
+}
+.two{
+    background:url('https://kenh14cdn.com/thumb_w/650/2016/1-1462079008911.jpg') no-repeat;
+    background-size:cover;
+    grid-area: 1/3/3/4;
+}
+.three{
+    background:url('https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2020/4/7/796577/Tan-Chay-Truoc-7-Gio-02.jpg') no-repeat;
+    background-size:cover;
+    grid-area: 1/4/2/span 1;
+}
+.four{
+    background:url('https://img3.thuthuatphanmem.vn/uploads/2019/07/07/anh-chu-meo-de-thuong_020434248.jpg') no-repeat;
+    background-size:cover;
+    grid-area: 2/1/span 2/2;
+}
+.five{
+    background:url('https://live.staticflickr.com/8141/7118664479_c00519cd80_b.jpg') no-repeat;
+    background-size:cover;
+    grid-area: 2/2/span 2/3;
+}
+.six{
+    background:url('http://mcvideomd1fr.keeng.net/playnow/images/channel/avatar/20190707/84868949996_20190707091404.jpg') no-repeat;
+    background-size:cover;
+    grid-area: 2/4/3/span 1;
+}
+.seven{
+    background:url('https://allimages.sgp1.digitaloceanspaces.com/tipeduvn/2022/06/1654373521_440_50-Hinh-anh-meo-con-dep-anh-meo-con-xinh.jpg') no-repeat;
+    background-size:cover;
+    grid-area: 3/3/span 1/span 2;
+}
